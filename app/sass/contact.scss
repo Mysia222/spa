@@ -1,0 +1,153 @@
+#contact img {
+    opacity: 0.5;
+}
+
+#form-main {
+    float: left;
+    margin-right: -30px;
+    margin-left: 300px;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: brandonligh;
+    padding-top: -100px;
+    margin-top: -600px;
+    h2 {
+        font-size: 30px;
+        margin-left: -260px;
+        color: black;
+        font-weight: bold;
+    }
+    #form-div {
+        padding-bottom: 50px;
+        width: 330px;
+        float: right;
+        left: 50%;
+        margin-top: 30px;
+        margin-left: 270px;
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+    }
+    .feedback-input {
+        color: #3c3c3c;
+        font-size: 14px;
+        border-bottom: 1px solid black;
+        border: 1px 2px 3px 4px solid black;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-radius: 0;
+        letter-spacing: 1.6px;
+        font-family: brandonligh;
+        line-height: 22px;
+        text-transform: uppercase;
+        background-color: rgba(251, 251, 251, 0.39);
+        padding: 13px 13px 13px 54px;
+        margin-bottom: 10px;
+        width: 100%;
+         :focus {
+            background: rgba(255, 255, 255, 0.67);
+            box-shadow: 0;
+            outline: none;
+            padding: 13px 13px 13px 54px;
+        }
+    }
+    #name {
+        background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+         :focus {
+            background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+            background-size: 30px 30px;
+            background-position: 8px 5px;
+            background-position: 11px 8px;
+            background-repeat: no-repeat;
+        }
+    }
+    #email {
+        background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+         :focus {
+            background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+            background-size: 30px 30px;
+            background-position: 11px 8px;
+            background-repeat: no-repeat;
+        }
+    }
+    #comment {
+        background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    textarea {
+        width: 100%;
+        height: 150px;
+        line-height: 150%;
+        resize: vertical;
+    }
+    input:hover,
+    textarea:hover,
+    input:focus,
+    textarea:focus {
+        background-color: rgba(255, 255, 255, 0.66);
+    }
+}
+
+#button-blue {
+    float: left;
+    width: 100%;
+    border: rgba(253, 253, 253, 0.08) solid 4px;
+    cursor: pointer;
+    background-color: rgba(50, 65, 74, 0.13);
+    color: black;
+    font-size: 24px;
+    padding-top: 22px;
+    border-bottom: 1px solid black;
+    padding-bottom: 22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+     :hover {
+        background-color: rgba(10, 10, 10, 0.42);
+        color: gainsboro;
+    }
+}
+
+.ease {
+    width: 0px;
+    height: 74px;
+    background-color: #fbfbfb;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.submit:hover .ease {
+    width: 100%;
+    background-color: white;
+}
+
+.submit {
+    width: 200px;
+    height: 50px;
+     :hover {
+        background-color: rgba(10, 10, 10, 0.42);
+        color: gainsboro;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    #form-div {
+        left: 3%;
+        margin-right: 3%;
+        width: 88%;
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}

@@ -1,0 +1,47 @@
+#goods {
+    padding-left: 50px;
+    padding-top: 50px;
+    height: 1004px;
+    img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.single-goods {
+    width: 300px;
+    height: 350px;
+    margin-bottom: 150px;
+    /* margin: 10px; */
+    float: left;
+    text-align: center;
+}
+
+.single-goods-img a :hover {
+    filter: saturate(180%);
+}
+
+.single-goods button {
+    display: block;
+    margin: 20px auto;
+}
+
+#button {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    background: rgba(255, 112, 190, 0.2);
+    text-transform: uppercase;
+    outline: none;
+    font-weight: 600;
+    padding: 20px 60px;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 20px 50px;
+    font-weight: 600;
+}
+
+#button:hover {
+    background: grey;
+    color: white;
+}

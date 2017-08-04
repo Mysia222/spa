@@ -1,0 +1,47 @@
+#cart {
+    margin-top: 10px;
+}
+
+.good {
+     :first-child {
+        margin-top: 90px;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.onegood {
+    float: right;
+    margin-top: -200px;
+    margin-right: 400px;
+    h3 {
+        width: 300px;
+    }
+}
+
+#allcart {
+    margin-bottom: 200px;
+    h2 {
+        font-size: 26px;
+        padding-top: 30px;
+        margin-bottom: -30px;
+    }
+}
+
+button#deletebutton {
+    float: right;
+    margin-top: -170px;
+    width: 30px;
+    border: none;
+    height: 50px;
+    background: url(../images/delete1.jpg) no-repeat #fff;
+    background-color: white;
+     :hover {}
+}
+
+#sort img {
+    width: 400px;
+    height: 400px;
+}

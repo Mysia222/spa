@@ -1,0 +1,206 @@
+{
+    "1": {
+        "id": 1,
+        "name": "Pro Plan Adult Medium Sensitive Skin",
+        "pet": "dog",
+        "type": "dogsfood",
+        "cost": 42,
+        "description": "It is a dry dog food for adult dogs who have sensitive skin. If your medium-sized dog has sensitive skin, this complete dog food is specially formulated to help support their needs and help target their sensitivity.",
+        "image": "images/clothe11.jpg"
+    },
+    "2": {
+        "id": 2,
+        "name": "Dog Chow Sensitive with Salmon",
+        "pet": "dog",
+        "type": "dogsfood",
+        "cost": 96,
+        "description": "Similar to people, dogs can be more sensitive to certain ingredients. DOG CHOW® Adult Sensitive is made exclusively for dogs with more sensitive stomachs, in order to support their healthy digestion everyday.",
+        "image": "images/foodDogs22.jpg"
+    },
+    "3": {
+        "id": 3,
+        "name": "Eukanuba Adult Large Breed",
+        "pet": "dog",
+        "type": "dogsfood",
+        "cost": 102,
+        "description": " This premium adult large breed dog food offers a specialized fiber system, made from natural beet pulp and prebiotic FOS, which promotes nutrient absorption and healthy digestion",
+        "image": "images/foodDogs33.jpg"
+    },
+
+    "4": {
+        "id": 4,
+        "name": "Chappi",
+        "pet": "dog",
+        "type": "dogsfood",
+        "cost": 64,
+        "description": "Chappi ® pouches are meaty and tasty meal for your dog that smells and looks like a home made. Juicy meat in gravy taste so much that your dog's ears are shaking!",
+        "image": "images/foodDogs44.jpg"
+    },
+    "5": {
+        "id": 5,
+        "name": "Royal Canin Labrador Retriever Adult",
+        "pet": "dog",
+        "type": "dogsfood",
+        "cost": 61,
+        "description": "The Labrador Retriever is known for his tendency to gain weight. This formula helps maintain the Labrador Retriever’s ideal weight thanks to an adapted calorie content.",
+        "image": "images/foodDogs55.jpg"
+    },
+    "6": {
+        "id": 6,
+        "name": "Royal Canin Yorkshire Terrier Adult",
+        "pet": "dog",
+        "type": "dogsfood",
+        "cost": 62,
+        "description": " Tailor-made Nutrition for Pure Breed Dogs. An exclusive kibble for each breed: a concentration of scientific and nutritional expertise born from the unique knowledge of Royal Canin combined with the practical experience of Breeders.",
+        "image": "images/foodDogs66.jpg"
+    },
+
+
+
+
+
+    "7": {
+        "id": 7,
+        "name": "Gift Set Solid Cuddler Dog Bed",
+        "pet": "dog",
+        "type": "dogsbeds",
+        "cost": 62,
+        "description": "This adorable set includes a dog bed, blanket and toy, allowing your furry friend a soft and comfortable place to sleep and rest as well as a way to stay active and engaged while awake. ",
+        "image": "images/dogsbeds1.png"
+    },
+    "8": {
+        "id": 8,
+        "name": "Memory Foam Pillow Dog Bed",
+        "pet": "dog",
+        "type": "dogsbeds",
+        "cost": 42,
+        "description": "This Top Paw Orthopedic Gel Memory Foam Pillow Dog Bed is the resting place your dog has been waiting for. This bed features both orthopedic gel and memory foam, meaning optimal comfort for your dog and a place where he can truly find rest and relaxation. ",
+        "image": "images/dogsbeds2.png"
+    },
+
+
+
+
+
+
+
+    "9": {
+        "id": 9,
+        "name": "Pro Plan Adult Medium Sensitive Skin",
+        "pet": "dog",
+        "type": "catsfood",
+        "cost": 42,
+        "description": "This adorable set includes a dog bed, blanket and toy, allowing your furry friend a soft and comfortable place to sleep and rest as well as a way to stay active and engaged while awake.",
+        "image": "images/catsfoods1.png"
+    },
+    "10": {
+        "id": 10,
+        "name": "Authority® Kitten Food - Chicken & Liver, Pate",
+        "pet": "dog",
+        "type": "catsfood",
+        "cost": 96,
+        "description": "Similar to people, dogs can be more sensitive to certain ingredients. DOG CHOW® Adult Sensitive is made exclusively for dogs with more sensitive stomachs, in order to support their healthy digestion everyday.",
+        "image": "images/catsfoods2.png"
+    },
+    "11": {
+        "id": 11,
+        "name": "Purina® Pro Plan® Savor Entrée Braised Adult Cat Food",
+        "pet": "cat",
+        "type": "catsfood",
+        "cost": 102,
+        "description": " This premium adult large breed dog food offers a specialized fiber system, made from natural beet pulp and prebiotic FOS, which promotes nutrient absorption and healthy digestion",
+        "image": "images/catsfoods3.png"
+    },
+
+
+
+
+
+
+
+    "12": {
+        "id": 12,
+        "name": "Trixie Baza Cat Post",
+        "pet": "cat",
+        "type": "catsbeds",
+        "cost": 62,
+        "description": " Tailor-made Nutrition for Pure Breed Dogs. An exclusive kibble for each breed: a concentration of scientific and nutritional expertise born from the unique knowledge of Royal Canin combined with the practical experience of Breeders.",
+        "image": "images/catsbeds1.png"
+    },
+    "13": {
+        "id": 13,
+        "name": "Whisker City® Cozy Inn Cat Tree",
+        "pet": "cat",
+        "type": "catsbeds",
+        "cost": 62,
+        "description": " Tailor-made Nutrition for Pure Breed Dogs. An exclusive kibble for each breed: a concentration of scientific and nutritional expertise born from the unique knowledge of Royal Canin combined with the practical experience of Breeders.",
+        "image": "images/catsbeds2.png"
+    },
+
+
+
+
+    "14": {
+        "id": 14,
+        "name": "Grreat Choice® Bungee Monkey Dog Toy - Squeaker",
+        "pet": "dog",
+        "type": "dogstoys",
+        "cost": 72,
+        "description": " Keep your dog thoroughly engaged and fully entertained with the Grreat Choice Bungee Monkey Dog Toy. This fun toy has an ace in the hole when it comes to keeping dogs entertained via the playful squeaking sounds it makes when its head is squeezed. ",
+        "image": "images/dogstoy1.png"
+    },
+    "15": {
+        "id": 15,
+        "name": "Nylabone® Dura Chew Double Bone Dog Toy",
+        "pet": "dog",
+        "type": "dogstoys",
+        "cost": 62,
+        "description": "Fight boredom and get into action with action ridges & nubs, great for powerful chewers.",
+        "image": "images/dogstoy2.png"
+    },
+    "16": {
+        "id": 16,
+        "name": "ED Ellen DeGeneres Flattie Beaver Dog Toy - Squeaker",
+        "pet": "dog",
+        "type": "dogstoys",
+        "cost": 772,
+        "description": "This ED Ellen DeGeneres Fashion Mesh Beaver Flattie offers many ways to keep your dog engaged and entertained. ",
+        "image": "images/dogstoy3.png"
+    },
+
+
+
+
+
+
+
+
+    "17": {
+        "id": 17,
+        "name": "Whisker City® Cozy Inn Cat Tree",
+        "pet": "cat",
+        "type": "catstoys",
+        "cost": 5,
+        "description": " Tailor-made Nutrition for Pure Breed Dogs. An exclusive kibble for each breed: a concentration of scientific and nutritional expertise born from the unique knowledge of Royal Canin combined with the practical experience of Breeders.",
+        "image": "images/catstoys1.jpg"
+    },
+    "18": {
+        "id": 18,
+        "name": "Whisker City® Cozy Inn Cat Tree",
+        "pet": "cat",
+        "type": "catstoys",
+        "cost": 12,
+        "description": " Tailor-made Nutrition for Pure Breed Dogs. An exclusive kibble for each breed: a concentration of scientific and nutritional expertise born from the unique knowledge of Royal Canin combined with the practical experience of Breeders.",
+        "image": "images/catstoys2.jpg"
+    },
+    "19": {
+        "id": 19,
+        "name": "Whisker City® Cozy Inn Cat Tree",
+        "pet": "cat",
+        "type": "catstoys",
+        "cost": 54,
+        "description": " Tailor-made Nutrition for Pure Breed Dogs. An exclusive kibble for each breed: a concentration of scientific and nutritional expertise born from the unique knowledge of Royal Canin combined with the practical experience of Breeders.",
+        "image": "images/catstoys3.jpg"
+    }
+
+}
