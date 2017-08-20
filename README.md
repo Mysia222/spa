@@ -1,2 +1,1 @@
-# spa
 it-academy
