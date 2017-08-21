@@ -8,17 +8,17 @@
 
 
                 on(key, value) {
-                    var cache = this.cache;
+                    let cache = this.cache;
                     cache[key] = value;
                 }
 
                 initFuct(hash) {
-                    var cache = this.cache;
-                    for (var r in cache) {
-                        var reg = this.initRegexps(r);
+                    let cache = this.cache;
+                    for (let r in cache) {
+                        let reg = this.initRegexps(r);
                         if (reg.test(hash)) {
-                            var callback = cache[r] || function() {};
-                            var params = this.getParams(reg, hash);
+                            let callback = cache[r] || function() {};
+                            let params = this.getParams(reg, hash);
                             callback.apply(this, params);
                         }
                     }
@@ -26,23 +26,17 @@
                 }
 
                 init() {
-                    var t = this;
+                    let t = this;
                     window.addEventListener('hashchange', function() {
-                        var content = document.getElementById('content');
+                        let content = document.getElementById('content');
                         content.innerHTML = '';
-                        var hash = location.hash.slice(1);
+                        let hash = location.hash.slice(1);
                         t.initFuct(hash);
                     });
-                    window.addEventListener('load', function() {
-                        var hash = location.hash.slice(1);
-                        t.initFuct(hash);
-                    })
                 }
 
                 initRegexps(route) {
-                    route = route.replace(/(\/\w?:\w+)+/g, '\/([^/]+)')
-                        .replace(/\*\w*/g, '([^?]*?)');
-
+                    route = route.replace(/\/?:(\w+)+/g, '\/([^/]+)');
                     return new RegExp('^' + route + '$');
                 }
 
@@ -51,8 +45,6 @@
                 }
 
             }
-
-
 
             window.Router = Router;
 

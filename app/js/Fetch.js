@@ -5,7 +5,6 @@
 
             constructor(url, type) {
                 this.url = url;
-                //this.type = type;
             }
 
             json() {
@@ -18,7 +17,6 @@
                                 return Promise.resolve(response);
                             });
                         }
-
                         return response.text().then((text) => {
                             response.json = JSON.parse(text);
 

@@ -6,78 +6,100 @@
             fetchObject = new Fetch('./data/goods.json'),
             options = [{
                 storeName: 'cart',
-                key: 'idtime',
+                keyPath: "idtime",
                 indexes: [
                     { name: 'type', field: 'type', unique: false }
                 ]
             }],
-            db = new DB("products", 1, options),
-            key = { keyPath: "idtime" };
+            db = new DB("products", 1, options);
 
 
         if (!location.hash) {
             location.hash = '#/home';
         }
 
+        fetchObject.json()
+            .then((response) => {
+                let data = response.json;
+                let page = new Page(data);
 
-        router.on('/home', () => {
-            let page = new Page();
-            page.displayHomePage();
-        })
+                router.on('/home', () => {
+
+                    page.displayHomePage(data);
+                })
 
 
-        router.on('/products/:name', (name) => {
-            let data,
-                correctData,
-                page;
-            fetchObject.json()
-                .then((response) => {
-                    data = response.json;
-                    page = new Page(data);
+                router.on('/products/:name', (name) => {
+                    let correctData;
                     page.displayDataContent(name);
 
+                    let elems = document.getElementsByClassName('add-to-cart');
+
+                    content.addEventListener('change', () => {
+                        if (event.target.id == "select") {
+                            let x = document.getElementById("select").value;
+                            goods.innerHTML = '';
+                            let correctData = page.makeDataToArray();
+                            let pageData = page.findCurrentArray(correctData, name);
+                            page.selectProductCost(pageData, x);
+                        }
+                    })
+
+
                 })
-                .catch((error) => {
-                    console.log(error.json);
+                router.on('/contact', () => {
+                    page.displayContactPage();
+                })
+
+                router.on('/cart', () => {
+                    db.showAll('cart');
+
+                })
+
+                router.init();
+
+                content.addEventListener("click", () => {
+                    //matches
+
+                    if (event.target.getAttribute('class') == 'button add-to-cart') {
+                        console.log('click add to cart');
+                        let date = new Date(),
+                            articul = event.target.getAttribute('data-art');
+                        data[articul].idtime = date.getTime();
+                        let arr = [data[articul]];
+
+                        db.addItem('cart', arr, data[articul].idtime);
+                        page.showModalWindow();
+
+                    }
+
                 });
 
-            let elems = document.getElementsByClassName('add-to-cart');
+                content.addEventListener('click', () => {
+                    if (event.target.classList.contains('delete')) {
+                        let id = event.target.getAttribute('data-art');
+                        let product = event.target.parentElement;
+                        db.deleteCost('cart', id);
+                        db.delete('cart', Number(id));
+                        product.style.opacity = "0.4";
 
-            content.addEventListener('change', () => {
-                if (event.target.id == "select") {
-                    let x = document.getElementById("select").value;
-                    content.innerHTML = '';
-                    let correctData = page.makeDataToArray();
-                    page.selectProductCost(correctData, x);
-                }
+                        setTimeout(function() {
+                            product.innerHTML = '';
+                        }, 1000);
+                    }
+
+                    if (event.target.id == "buy") {
+                        db.deleteAll('cart');
+                        content.innerHTML = '<h2>Thank you for order</h2>';
+
+                    }
+                });
             })
-
-            content.addEventListener("click", () => {
-                if (event.target.getAttribute('class') == 'add-to-cart') {
-                    let date = new Date(),
-                        articul = event.target.getAttribute('data-art');
-                    data[articul].idtime = date.getTime();
-                    let arr = [data[articul]];
-                    db.addItem('cart', arr, data[articul].idtime);
-                }
-            })
-        })
+            .catch((error) => {
+                console.log(error.json);
+            });
 
 
-
-        router.on('/cart', () => {
-            db.showAll('cart');
-            content.addEventListener('click', () => {
-                if (event.target.id == "deletebutton") {
-                    let id = event.target.getAttribute('data-art');
-                    db.delete('cart', id);
-                    console.log(id);
-                }
-            })
-        })
-
-
-        router.init();
 
     }
     ());

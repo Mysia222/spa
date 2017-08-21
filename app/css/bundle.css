@@ -10,26 +10,110 @@
 #about {
   padding: 5px;
 }
-#cart {
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 30%;
+  font-size: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.modal-content img {
+  width: 100px;
+  height: 100px;
+}
+
+.modal-content p {
+  margin-right: 90px;
+  text-align: right;
+  margin-top: -80px;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+#count {
+  margin-top: -20px;
+  margin-left: 130px;
+  /* margin-right: -20px; */
+}
+
+#count img {
+  height: 40px;
+  width: 40px;
+}
+
+#number {
+  /* display: inline; */
+  margin-left: 20px;
+  color: black;
+  font-weight: 900;
+  font-size: 20px;
+  /* top: -50px; */
+  margin-top: -40px;
+  /* margin-bottom: 30px; */
+}
+.cart {
   margin-top: 10px;
 }
 
-.good :first-child {
-  margin-top: 90px;
+.cart :last-child {
+  margin-bottom: 20px;
 }
 
-.good img {
+.goodimg img {
   width: 200px;
   height: 200px;
 }
 
-.onegood {
+.goodname {
   float: right;
   margin-top: -200px;
   margin-right: 400px;
 }
 
-.onegood h3 {
+.goodname h3 {
   width: 300px;
 }
 
@@ -40,7 +124,7 @@
 #allcart h2 {
   font-size: 26px;
   padding-top: 30px;
-  margin-bottom: -30px;
+  margin-bottom: 80px;
 }
 
 button#deletebutton {
@@ -56,6 +140,23 @@ button#deletebutton {
 #sort img {
   width: 400px;
   height: 400px;
+}
+
+button.add-to-cart.button {
+  margin-top: 50px;
+}
+
+div#total {
+  font-family: brandonligh;
+  font-size: 26px;
+  margin: 30px;
+  font-weight: bold;
+}
+
+div#countnumber {
+  font-size: 24px;
+  float: right;
+  color: red;
 }
 #contact img {
   opacity: 0.5;
@@ -224,9 +325,10 @@ button#deletebutton {
   }
 }
 #goods {
-  padding-left: 50px;
+  padding-left: 80px;
   padding-top: 50px;
   height: 1004px;
+  margin-bottom: 300px;
 }
 
 #goods img {
@@ -238,7 +340,7 @@ button#deletebutton {
   width: 300px;
   height: 350px;
   margin-bottom: 150px;
-  /* margin: 10px; */
+  margin-top: 50px;
   float: left;
   text-align: center;
 }
@@ -247,16 +349,31 @@ button#deletebutton {
   filter: saturate(180%);
 }
 
-.single-goods button {
-  display: block;
-  margin: 20px auto;
+.newproduct {
+  margin-left: 30px;
 }
 
-#button {
+#newProducts {
+  height: 700px;
+  margin-top: -30px;
+  margin-left: 30px;
+}
+
+#newProducts img {
+  width: 300px;
+  height: 300px;
+}
+
+.top {
+  margin-top: 120px;
+  margin-bottom: 70px;
+  font-size: 20px;
+}
+
+.button {
   border: none;
   cursor: pointer;
   display: inline-block;
-  background: rgba(255, 112, 190, 0.2);
   text-transform: uppercase;
   outline: none;
   font-weight: 600;
@@ -267,7 +384,11 @@ button#deletebutton {
   font-weight: 600;
 }
 
-#button:hover {
+.add-to-cart {
+  background: rgba(180, 74, 132, 0.2);
+}
+
+.add-to-cart:hover {
   background: grey;
   color: white;
 }
@@ -326,6 +447,7 @@ h2 {
   font: 100% brandonligh;
   text-transform: uppercase;
   color: #959595;
+  margin-top: 30px;
 }
 
 .top-menu img {
@@ -357,16 +479,20 @@ h2 {
   font-size: 16px;
 }
 
-.top-menu .contact-cart {
+.top-menu #contact-cart {
   float: right;
   margin-top: 16px;
   padding-left: 28px;
   font-size: 20px;
 }
 
-.top-menu .contact-cart :first-child {
+.top-menu #contact-cart :first-child {
   padding-right: 10px;
-  font-size: 14px;
+}
+
+.top-menu .contc {
+  display: inline;
+  font-size: 16px;
 }
 
 ul {
@@ -476,7 +602,7 @@ li {
   color: #000;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .wrap .decor {
     padding: 3px;
   }
@@ -488,6 +614,10 @@ li {
 
   .wrap li {
     float: none;
+  }
+
+  .wrap ul#primary {
+    margin-left: -30px;
   }
 
   .wrap ul#primary li:hover a {
@@ -572,6 +702,139 @@ li {
   float: none;
   display: block;
   margin-right: 40px;
+}
+
+.slides {
+  padding-left: 40px;
+}
+
+.arror {
+  border: none;
+  width: 40px;
+  font-size: 30px;
+  background: none;
+  height: 500px;
+  position: relative;
+  float: left;
+}
+
+.arror:hover {
+  background: #efefef;
+}
+
+@media only screen and (max-width: 600px) {
+  #goods {
+    /* padding-left: 80px; */
+    padding-top: 50px;
+    float: none;
+    padding-left: 0px;
+    height: 2904px;
+    width: 600px;
+    margin-bottom: 300px;
+  }
+
+  .single-goods {
+    width: 300px;
+    height: 350px;
+    margin-bottom: 180px;
+    margin-top: 50px;
+    float: none;
+    text-align: center;
+  }
+
+  .footer {
+    height: 230px;
+    margin-top: 100px;
+    /* position: absolute; */
+    left: 0;
+    bottom: 0;
+    /* margin-bottom: 300px; */
+    /* width: 100%; */
+    /* height: 80px; */
+    padding-top: 10px;
+    background: #2b2b2b;
+    color: white;
+  }
+
+  h1 {
+    margin-right: 800px;
+    font-size: 100px;
+  }
+
+  .slides {
+    display: none;
+  }
+
+  #contact-cart {
+    /* margin-left: 00px; */
+    margin-right: 830px;
+  }
+
+  #newProducts {
+    height: 1400px;
+    margin-top: -30px;
+    /* margin-right: -30px; */
+    margin-left: -40px;
+  }
+
+  #newProducts img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .top {
+    margin-left: -793px;
+  }
+
+  .goodname {
+    /* float: right; */
+    float: none;
+    /* margin-bottom: 100px; */
+    margin-top: 20px;
+    margin-left: 20px;
+    /* margin-right: 300px; */
+  }
+
+  button#deletebutton {
+    /* float: right; */
+    position: absolute;
+    margin-top: -330px;
+    margin-left: 248px;
+    width: 30px;
+    border: none;
+    height: 50px;
+    background: url("../images/delete1.jpg") no-repeat #fff;
+    background-color: white;
+  }
+
+  div#countnumber {
+    font-size: 24px;
+    /* float: left; */
+    float: none;
+    /* margin-right: 30px; */
+    color: red;
+  }
+
+  #form-main {
+    float: left;
+    margin-left: -230px;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: brandonligh;
+    padding-top: -100px;
+    margin-top: -600px;
+  }
+
+  #form-main #form-div {
+    padding-bottom: 50px;
+    width: 170px;
+    float: right;
+    left: 50%;
+    margin-top: 30px;
+    margin-left: 270px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+  }
 }
 .column {
   /* border: solid 1px #C7CADD; */

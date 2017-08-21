@@ -25,8 +25,14 @@ gulp.task('scripts', function() {
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
 
-
 gulp.task('sass', function() {
+    return gulp.src('app/sass/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(concatCss("bundle.css"))
+        .pipe(gulp.dest('app/css'));
+});
+
+gulp.task('dsass', function() {
     return gulp.src('app/scss/**/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('app/css'))

@@ -1,18 +1,18 @@
-#cart {
+.cart {
     margin-top: 10px;
+     :last-child {
+        margin-bottom: 20px;
+    }
 }
 
-.good {
-     :first-child {
-        margin-top: 90px;
-    }
+.goodimg {
     img {
         width: 200px;
         height: 200px;
     }
 }
 
-.onegood {
+.goodname {
     float: right;
     margin-top: -200px;
     margin-right: 400px;
@@ -26,7 +26,7 @@
     h2 {
         font-size: 26px;
         padding-top: 30px;
-        margin-bottom: -30px;
+        margin-bottom: 80px;
     }
 }
 
@@ -44,4 +44,21 @@ button#deletebutton {
 #sort img {
     width: 400px;
     height: 400px;
+}
+
+button.add-to-cart.button {
+    margin-top: 50px;
+}
+
+div#total {
+    font-family: brandonligh;
+    font-size: 26px;
+    margin: 30px;
+    font-weight: bold;
+}
+
+div#countnumber {
+    font-size: 24px;
+    float: right;
+    color: red;
 }

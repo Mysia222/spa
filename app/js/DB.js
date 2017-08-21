@@ -7,7 +7,6 @@
                 this.dbName = dbName;
                 this.version = version;
                 this.db = null;
-                this.t = this;
                 this.objectStore = null;
                 this.options = {};
                 this.cart = [];
@@ -16,9 +15,8 @@
                     for (let i = 0; i < options.length; i++) {
                         this.options[options[i].storeName] = options[i];
                     }
-                } else {
-                    this.options[options.storeName] = options;
                 }
+
                 let request;
                 if (this.version)
                     request = indexedDB.open(this.dbName, this.version);
@@ -35,7 +33,6 @@
                     for (var i = 0; i < opKeys.length; i++) {
                         let options = this.options[opKeys[i]],
                             objectStore;
-
                         if (!this.db.objectStoreNames.contains(options.storeName)) {
                             if (options.keyPath)
                                 objectStore = db.createObjectStore(options.storeName, { keyPath: options.keyPath });
@@ -79,7 +76,6 @@
             }
 
             addItem(storeName, data, key) {
-
                 let request = this.getTransactionStore(storeName, "readwrite").put(data, key);
                 request.onsuccess = function(event) {
                     //add
@@ -90,11 +86,10 @@
             }
 
             setAll(data) {
-
                 let arr = [];
                 for (let i = 0; i < data.length; i++) {
                     for (let j = 0; j < 1; j++) {
-                        arr[i] = data[i][j];
+                        arr.push(data[i][j]);
                     }
                 }
                 return arr;
@@ -103,31 +98,36 @@
             addDOMElementsCart(arr) {
                 let out = '',
                     content = document.getElementById('content'),
-                    cart = document.createElement('div');
+                    cart = document.createElement('div'),
+                    count = 0;
                 cart.id = "allcart";
                 content.appendChild(cart);
                 cart.innerHTML = '<h2> Your cart </h2>'
-
                 for (let i = 0; i < arr.length; i++) {
-
-                    out += '<div id = "cart"><div class = "good"><a href="#">';
-                    out += '<img src="' + arr[i].image + '"></a></div></div>';
-                    out += '<div class = "onegood"> <h3> <a href = "#product' + arr[i]['id'] + '">' + arr[i]['name'] + '</a></h3>';
-                    out += '<p>Cost: ' + arr[i]['cost'] + '</p>';
-                    out += '<div id = "buttons"><button class="add-to-cart">Buy</button></div></div>';
-                    out += '<button id = "deletebutton" data-art="' + arr[i].idtime + '"> </button>';
-
+                    count = count + Number(arr[i]['cost']);
+                    out += '<div class = "cart"><div class = "goodimg">';
+                    out += '<img src="' + arr[i].image + '"></div>';
+                    out += '<div class = "goodname"> <h3> <a href = "#/products/' + arr[i]['id'] + '" class = "namePrd">' + arr[i]['name'] + '</a></h3>';
+                    out += '<p>Cost: ' + arr[i]['cost'] + '</p></div><div class="dislp" style = "display: none;">' + arr[i].id + '</div>';
+                    out += '<button id = "deletebutton" class = "delete" data-art="' + arr[i].idtime + '"> </button></div>';
                 }
+                out += "<hr><div id = 'total'> TOTAL <div id = 'countnumber'>" + count + "</div> </div>";
+                out += '<div id = "buttons"><button id = "buy" class="add-to-cart button">Buy ALL</button></div>';
                 cart.innerHTML += out;
 
             }
 
+            deleteAll(storeName) {
+                let objectStore = this.getTransactionStore(storeName, "readwrite").clear();
+
+            }
 
             showAll(storeName) {
                 let t = this,
                     objectStore = this.getTransactionStore(storeName, "readonly"),
                     results = [],
-                    arr;
+                    arr,
+                    arrId = [];
                 objectStore.openCursor().onsuccess = function(event) {
                     let cursor = event.target.result;
                     if (cursor) {
@@ -135,18 +135,52 @@
                         cursor.continue();
                     } else {
                         arr = this.setAll(results);
+                        arr.forEach(function(item, i, arr) {
+                            arrId.push(item['id']);
+                        });
+                        let sortArr = arrId.slice().sort();
                         this.addDOMElementsCart(arr);
-
                     }
                 }.bind(this);
-
             }
 
-            //не работает :(
+            deleteCost(storeName, idtime) {
+                let t = this,
+                    objectStore = this.getTransactionStore(storeName, "readonly"),
+                    results = [],
+                    arr,
+                    id = [];
+                objectStore.openCursor().onsuccess = function(event) {
+                    let cursor = event.target.result;
+                    if (cursor) {
+                        results.push(cursor.value);
+                        cursor.continue();
+                    } else {
+                        arr = this.setAll(results);
+                        console.log(arr);
+                        for (let i = 0; i < arr.length; i++) {
+                            if (arr[i]['idtime'] == idtime) {
+                                this.deleteCount(arr[i]['cost']);
+                            }
+                        }
+                    }
+                }.bind(this);
+            }
+
+
+            deleteCount(cost) {
+                let number = document.getElementById("countnumber").innerHTML,
+                    cartCount = document.getElementById("number").innerHTML;
+                let count = Number(number) - Number(cost),
+                    cartIco = Number(cartCount) - 1;
+                document.getElementById("number").innerHTML = String(cartIco);
+                document.getElementById("countnumber").innerHTML = String(count);
+            }
+
             delete(storeName, key) {
 
                 let request = this.getTransactionStore(storeName, "readwrite").delete(key);
-                request.onsuccess = function(event) {}.bind(this);
+                request.onsuccess = function(event) {};
 
             }
         }

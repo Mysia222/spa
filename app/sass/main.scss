@@ -52,9 +52,10 @@ h2 {
 }
 
 .top-menu {
-    font: 100% $light-font;
+    font: 100% brandonligh;
     text-transform: uppercase;
-    color: $gray-color;
+    color: #959595;
+    margin-top: 30px;
     img {
         width: 50px;
         height: 50px;
@@ -78,15 +79,18 @@ h2 {
         color: $gray-color;
         font-size: 16px;
     }
-    .contact-cart {
+    #contact-cart {
         float: right;
         margin-top: 16px;
         padding-left: 28px;
         font-size: 20px;
          :first-child {
             padding-right: 10px;
-            font-size: 14px;
         }
+    }
+    .contc {
+        display: inline;
+        font-size: 16px;
     }
 }
 
@@ -180,7 +184,7 @@ li {
     ul#primary li:hover>a {
         color: #000;
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 700px) {
         .decor {
             padding: 3px;
         }
@@ -190,6 +194,9 @@ li {
         }
         li {
             float: none;
+        }
+        ul#primary {
+            margin-left: -30px;
         }
         ul#primary li:hover a {
             background: none;
@@ -262,5 +269,125 @@ li {
             display: block;
             margin-right: 40px;
         }
+    }
+}
+
+.slides {
+    padding-left: 40px;
+}
+
+.arror {
+    border: none;
+    width: 40px;
+    font-size: 30px;
+    background: none;
+    height: 500px;
+    position: relative;
+    float: left;
+}
+
+.arror:hover {
+    background: #efefef;
+}
+
+@media only screen and (max-width: 600px) {
+    #goods {
+        /* padding-left: 80px; */
+        padding-top: 50px;
+        float: none;
+        padding-left: 0px;
+        height: 2904px;
+        width: 600px;
+        margin-bottom: 300px;
+    }
+    .single-goods {
+        width: 300px;
+        height: 350px;
+        margin-bottom: 180px;
+        margin-top: 50px;
+        float: none;
+        text-align: center;
+    }
+    .footer {
+        height: 230px;
+        margin-top: 100px;
+        /* position: absolute; */
+        left: 0;
+        bottom: 0;
+        /* margin-bottom: 300px; */
+        /* width: 100%; */
+        /* height: 80px; */
+        padding-top: 10px;
+        background: #2b2b2b;
+        color: white;
+    }
+    h1 {
+        margin-right: 800px;
+        font-size: 100px;
+    }
+    .slides {
+        display: none;
+    }
+    #contact-cart {
+        /* margin-left: 00px; */
+        margin-right: 830px;
+    }
+    #newProducts {
+        height: 1400px;
+        margin-top: -30px;
+        /* margin-right: -30px; */
+        margin-left: -40px;
+    }
+    #newProducts img {
+        width: 200px;
+        height: 200px;
+    }
+    .top {
+        margin-left: -793px;
+    }
+    .goodname {
+        /* float: right; */
+        float: none;
+        /* margin-bottom: 100px; */
+        margin-top: 20px;
+        margin-left: 20px;
+        /* margin-right: 300px; */
+    }
+    button#deletebutton {
+        /* float: right; */
+        position: absolute;
+        margin-top: -330px;
+        margin-left: 248px;
+        width: 30px;
+        border: none;
+        height: 50px;
+        background: url(../images/delete1.jpg) no-repeat #fff;
+        background-color: white;
+    }
+    div#countnumber {
+        font-size: 24px;
+        /* float: left; */
+        float: none;
+        /* margin-right: 30px; */
+        color: red;
+    }
+    #form-main {
+        float: left;
+        margin-left: -230px;
+        position: absolute;
+        text-transform: uppercase;
+        font-family: brandonligh;
+        padding-top: -100px;
+        margin-top: -600px;
+    }
+    #form-main #form-div {
+        padding-bottom: 50px;
+        width: 170px;
+        float: right;
+        left: 50%;
+        margin-top: 30px;
+        margin-left: 270px;
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
     }
 }

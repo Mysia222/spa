@@ -5,6 +5,7 @@
         "pet": "dog",
         "type": "dogsfood",
         "cost": 42,
+        "bringingdate": "2012-04-01T12:00:00.000Z",
         "description": "It is a dry dog food for adult dogs who have sensitive skin. If your medium-sized dog has sensitive skin, this complete dog food is specially formulated to help support their needs and help target their sensitivity.",
         "image": "images/clothe11.jpg"
     },
@@ -14,6 +15,7 @@
         "pet": "dog",
         "type": "dogsfood",
         "cost": 96,
+        "bringingdate": "2017-04-01T12:00:00.000Z",
         "description": "Similar to people, dogs can be more sensitive to certain ingredients. DOG CHOW® Adult Sensitive is made exclusively for dogs with more sensitive stomachs, in order to support their healthy digestion everyday.",
         "image": "images/foodDogs22.jpg"
     },
@@ -23,6 +25,7 @@
         "pet": "dog",
         "type": "dogsfood",
         "cost": 102,
+        "bringingdate": "2016-04-01T12:00:00.000Z",
         "description": " This premium adult large breed dog food offers a specialized fiber system, made from natural beet pulp and prebiotic FOS, which promotes nutrient absorption and healthy digestion",
         "image": "images/foodDogs33.jpg"
     },
@@ -33,6 +36,7 @@
         "pet": "dog",
         "type": "dogsfood",
         "cost": 64,
+        "bringingdate": "2015-04-01T12:00:00.000Z",
         "description": "Chappi ® pouches are meaty and tasty meal for your dog that smells and looks like a home made. Juicy meat in gravy taste so much that your dog's ears are shaking!",
         "image": "images/foodDogs44.jpg"
     },
@@ -42,6 +46,7 @@
         "pet": "dog",
         "type": "dogsfood",
         "cost": 61,
+        "bringingdate": "2012-04-01T12:00:00.000Z",
         "description": "The Labrador Retriever is known for his tendency to gain weight. This formula helps maintain the Labrador Retriever’s ideal weight thanks to an adapted calorie content.",
         "image": "images/foodDogs55.jpg"
     },
@@ -51,6 +56,7 @@
         "pet": "dog",
         "type": "dogsfood",
         "cost": 62,
+        "bringingdate": "2012-04-01T12:00:00.000Z",
         "description": " Tailor-made Nutrition for Pure Breed Dogs. An exclusive kibble for each breed: a concentration of scientific and nutritional expertise born from the unique knowledge of Royal Canin combined with the practical experience of Breeders.",
         "image": "images/foodDogs66.jpg"
     },
@@ -65,6 +71,7 @@
         "pet": "dog",
         "type": "dogsbeds",
         "cost": 62,
+        "bringingdate": "2017-07-02T12:00:00.000Z",
         "description": "This adorable set includes a dog bed, blanket and toy, allowing your furry friend a soft and comfortable place to sleep and rest as well as a way to stay active and engaged while awake. ",
         "image": "images/dogsbeds1.png"
     },
@@ -74,13 +81,10 @@
         "pet": "dog",
         "type": "dogsbeds",
         "cost": 42,
+        "bringingdate": "2017-07-06T12:00:00.000Z",
         "description": "This Top Paw Orthopedic Gel Memory Foam Pillow Dog Bed is the resting place your dog has been waiting for. This bed features both orthopedic gel and memory foam, meaning optimal comfort for your dog and a place where he can truly find rest and relaxation. ",
         "image": "images/dogsbeds2.png"
     },
-
-
-
-
 
 
 
@@ -90,24 +94,27 @@
         "pet": "dog",
         "type": "catsfood",
         "cost": 42,
+        "bringingdate": "2012-04-06T12:00:00.000Z",
         "description": "This adorable set includes a dog bed, blanket and toy, allowing your furry friend a soft and comfortable place to sleep and rest as well as a way to stay active and engaged while awake.",
         "image": "images/catsfoods1.png"
     },
     "10": {
         "id": 10,
-        "name": "Authority® Kitten Food - Chicken & Liver, Pate",
+        "name": "Authority® Kitten Food",
         "pet": "dog",
         "type": "catsfood",
         "cost": 96,
+        "bringingdate": "2017-06-06T12:00:00.000Z",
         "description": "Similar to people, dogs can be more sensitive to certain ingredients. DOG CHOW® Adult Sensitive is made exclusively for dogs with more sensitive stomachs, in order to support their healthy digestion everyday.",
         "image": "images/catsfoods2.png"
     },
     "11": {
         "id": 11,
-        "name": "Purina® Pro Plan® Savor Entrée Braised Adult Cat Food",
+        "name": "Purina® Pro Plan® Cat Food",
         "pet": "cat",
         "type": "catsfood",
         "cost": 102,
+        "bringingdate": "2017-05-05T12:00:00.000Z",
         "description": " This premium adult large breed dog food offers a specialized fiber system, made from natural beet pulp and prebiotic FOS, which promotes nutrient absorption and healthy digestion",
         "image": "images/catsfoods3.png"
     },
@@ -124,6 +131,7 @@
         "pet": "cat",
         "type": "catsbeds",
         "cost": 62,
+        "bringingdate": "2017-04-01T12:00:00.000Z",
         "description": " Tailor-made Nutrition for Pure Breed Dogs. An exclusive kibble for each breed: a concentration of scientific and nutritional expertise born from the unique knowledge of Royal Canin combined with the practical experience of Breeders.",
         "image": "images/catsbeds1.png"
     },
@@ -133,6 +141,7 @@
         "pet": "cat",
         "type": "catsbeds",
         "cost": 62,
+        "bringingdate": "2012-05-01T12:00:00.000Z",
         "description": " Tailor-made Nutrition for Pure Breed Dogs. An exclusive kibble for each breed: a concentration of scientific and nutritional expertise born from the unique knowledge of Royal Canin combined with the practical experience of Breeders.",
         "image": "images/catsbeds2.png"
     },
@@ -146,6 +155,7 @@
         "pet": "dog",
         "type": "dogstoys",
         "cost": 72,
+        "bringingdate": "2017-03-01T12:00:00.000Z",
         "description": " Keep your dog thoroughly engaged and fully entertained with the Grreat Choice Bungee Monkey Dog Toy. This fun toy has an ace in the hole when it comes to keeping dogs entertained via the playful squeaking sounds it makes when its head is squeezed. ",
         "image": "images/dogstoy1.png"
     },
@@ -155,6 +165,7 @@
         "pet": "dog",
         "type": "dogstoys",
         "cost": 62,
+        "bringingdate": "2015-04-01T12:00:00.000Z",
         "description": "Fight boredom and get into action with action ridges & nubs, great for powerful chewers.",
         "image": "images/dogstoy2.png"
     },
@@ -164,43 +175,146 @@
         "pet": "dog",
         "type": "dogstoys",
         "cost": 772,
+        "bringingdate": "2012-04-04T12:00:00.000Z",
         "description": "This ED Ellen DeGeneres Fashion Mesh Beaver Flattie offers many ways to keep your dog engaged and entertained. ",
         "image": "images/dogstoy3.png"
     },
 
 
-
-
-
-
-
-
     "17": {
         "id": 17,
-        "name": "Whisker City® Cozy Inn Cat Tree",
+        "name": "Mini toy Cat ",
         "pet": "cat",
         "type": "catstoys",
         "cost": 5,
+        "bringingdate": "2017-04-02T12:00:00.000Z",
         "description": " Tailor-made Nutrition for Pure Breed Dogs. An exclusive kibble for each breed: a concentration of scientific and nutritional expertise born from the unique knowledge of Royal Canin combined with the practical experience of Breeders.",
         "image": "images/catstoys1.jpg"
     },
     "18": {
         "id": 18,
-        "name": "Whisker City® Cozy Inn Cat Tree",
+        "name": "Really kitty® Cozy Inn Cat ",
         "pet": "cat",
         "type": "catstoys",
         "cost": 12,
+        "bringingdate": "2016-05-06T12:00:00.000Z",
         "description": " Tailor-made Nutrition for Pure Breed Dogs. An exclusive kibble for each breed: a concentration of scientific and nutritional expertise born from the unique knowledge of Royal Canin combined with the practical experience of Breeders.",
         "image": "images/catstoys2.jpg"
     },
     "19": {
         "id": 19,
-        "name": "Whisker City® Cozy Inn Cat Tree",
+        "name": "Cute kitty® Cozy Inn Cat ",
         "pet": "cat",
         "type": "catstoys",
         "cost": 54,
+        "bringingdate": "2012-04-01T12:00:00.000Z",
         "description": " Tailor-made Nutrition for Pure Breed Dogs. An exclusive kibble for each breed: a concentration of scientific and nutritional expertise born from the unique knowledge of Royal Canin combined with the practical experience of Breeders.",
         "image": "images/catstoys3.jpg"
+    },
+
+
+
+
+    "20": {
+        "id": 20,
+        "name": "Grreat Choice® Large Bird Food ",
+        "pet": "bird",
+        "type": "birdsfood",
+        "cost": 36,
+        "bringingdate": "2012-04-01T12:00:00.000Z",
+        "description": " Feed in a clean, covered container. Give only as much as your Parrot will eat in a 24 hour period.Ingredients:Striped Sunflower, Safflower, Oat Groats, Corn, Wheat, White Millet, Kibbled Corn",
+        "image": "images/birdsfood1.png"
+    },
+    "21": {
+        "id": 21,
+        "name": "Higgins Sunburst Gourmet Blend Conure Food",
+        "pet": "bird",
+        "type": "birdsfood",
+        "cost": 32,
+        "bringingdate": "2017-01-01T12:00:00.000Z",
+        "description": " Higgins Sunburst Gourmet Blend Conure Food is the premium gourmet companion bird food that is loaded with natural goodness. Formulated as a food and treat all in one, SUNBURST contains mixed fruits and vegetables, wholesome seeds, grains, nuts, legumes and much more! ",
+        "image": "images/birdsfood2.png"
+    },
+    "22": {
+        "id": 22,
+        "name": "Lafeber's® Premium Daily Diet Macaw & Cockatoo Food ",
+        "pet": "bird",
+        "type": "birdsfood",
+        "cost": 54,
+        "bringingdate": "2012-04-01T12:00:00.000Z",
+        "description": " Providing your bird with proper nutrition is easy with Lafeber's Premium Daily Diet Macaw & Cockatoo Food. All the vitamins, minerals and nutrients your bird needs are contained in this delicious product. Best of all, birds can't pick and choose what they eat with pelleted food.",
+        "image": "images/catstoys3.jpg"
+    },
+    "23": {
+        "id": 23,
+        "name": "All Living Things® Knots Bird Toy ",
+        "pet": "bird",
+        "type": "birdsaccessories",
+        "cost": 34,
+        "bringingdate": "2017-04-01T12:00:00.000Z",
+        "description": " Providing your bird with proper nutrition is easy with Lafeber's Premium Daily Diet Macaw & Cockatoo Food. All the vitamins, minerals and nutrients your bird needs are contained in this delicious product. Best of all, birds can't pick and choose what they eat with pelleted food.",
+        "image": "images/birdsaccessories1.png"
+    },
+    "24": {
+        "id": 24,
+        "name": "All Living Things® Heart Bird Swing ",
+        "pet": "bird",
+        "type": "birdsaccessories",
+        "cost": 39,
+        "bringingdate": "2017-04-01T12:00:00.000Z",
+        "description": " Your bird will be sitting pretty with this fun and exciting swing. Ideal for small- to medium-size birds, this swing is designed with brightly colored shapes and metal bells for plenty of entertainment. Let your pet feel like he's sitting on top of the world with the North American Pet Products Heart Swing Bird Toy.",
+        "image": "images/birdsaccessories2.png"
+    },
+    "25": {
+        "id": 25,
+        "name": "All Living Things® Heart Bird Swing ",
+        "pet": "bird",
+        "type": "birdsaccessories",
+        "cost": 9.99,
+        "bringingdate": "2017-04-01T12:00:00.000Z",
+        "description": " Your bird will be sitting pretty with this fun and exciting swing. Ideal for small- to medium-size birds, this swing is designed with brightly colored shapes and metal bells for plenty of entertainment. Let your pet feel like he's sitting on top of the world with the North American Pet Products Heart Swing Bird Toy.",
+        "image": "images/birdsaccessories2.png"
+    },
+    "26": {
+        "id": 26,
+        "name": "Armarkat Cat Tree",
+        "pet": "cat",
+        "type": "catsbeds",
+        "cost": 102,
+        "bringingdate": "2015-05-01T12:00:00.000Z",
+        "description": " Make the Armarkat Pet Condo your pets favorite place to play and relax.",
+        "image": "images/catsbeds3.png"
+    },
+    "27": {
+        "id": 27,
+        "name": "Armarkat Cat Tree",
+        "pet": "cat",
+        "type": "catsbeds",
+        "cost": 102,
+        "bringingdate": "2015-05-01T12:00:00.000Z",
+        "description": " Make the Armarkat Pet Condo your pets favorite place to play and relax.",
+        "image": "images/catsbeds4.png"
+    },
+    "28": {
+        "id": 28,
+        "name": "Armarkat Cat Tree",
+        "pet": "cat",
+        "type": "catsbeds",
+        "cost": 102,
+        "bringingdate": "2015-05-01T12:00:00.000Z",
+        "description": " Make the Armarkat Pet Condo your pets favorite place to play and relax.",
+        "image": "images/catsbeds5.png"
+    },
+    "29": {
+        "id": 29,
+        "name": "Armarkat Cat Tree",
+        "pet": "cat",
+        "type": "catsbeds",
+        "cost": 102,
+        "bringingdate": "2015-05-01T12:00:00.000Z",
+        "description": " Make the Armarkat Pet Condo your pets favorite place to play and relax.",
+        "image": "images/catsbeds6.png"
     }
+
 
 }
